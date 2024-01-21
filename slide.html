@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/slide.css">
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/code.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/com.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/crea.jpg" alt="">
+        </div>
+      </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="slide.js"></script>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+ <button id="darkModeToggle">Activer le mode sombre</button>
+ <nav class="menu">
+    <ul>
+        <li class="bouton">
+            <a href="formulaire_court.html">
+            Création de compte
+        </a>
+        </li>
+    </ul>
+</nav>
+<h1>Les projets daxes d'année 1</h1>
+<!-- Liste des onglets -->
+<ul class="tabs">
+    <li class="tab tab-active" data-target="axe1">Code</li>
+    <li class="tab" data-target="axe2">Crea</li>
+    <li class="tab" data-target="axe3">com</li>
+    <li class="tab" data-target="axe4">JV</li>
+    <li class="tab" data-target="axe5">3D</li>
+</ul>
+
+<!-- Contenu associé à chaque onglet -->
+<div class="content axe axe1 active">
+    <p>Codage d'un site de colection de cartes harry potter</p>
+</div>
+<div class="content axe axe2">
+    <p>Creation d'une identité personnelle de star de la thematique de votre choix</p>
+</div>
+<div class="content axe axe3">
+    <p>creation d'un produit et de faire la communication de son produit et de le placer dans le marché</p>
+</div>
+<div class="content axe axe4">
+    <p>Crée un platformer 2d sur unity</p>
+</div>
+<div class="content axe axe5">
+    <p>crée et texturé un personnage en 3d sur blender</p>
+</div>
+<h1>Les progmmes des cours d'année 1</h1>
+<section class="accordeon">
+    
+    <div class="titre">
+        <p>code</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Environnement web-html/CSS/responsive</li>
+            <li>Javascript</li>
+            <li>PHP/MySQL</li>
+        </ul>
+    </div>
+</section>
+<section class="accordeon">
+    <div class="titre">
+        <p>crea</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Fondamentaux UI/UX avec Adobe XD</li>
+            <li>Motion design avec After Effects</li>
+            <li>Visual design avec Photoshop</li>
+        </ul>
+    </div>
+</section>
+
+<section class="accordeon">
+    <div class="titre">
+        <p>jv</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Introduction à unity & conception de jeu</li>
+            <li>Fondamentaux du game art</li>
+            <li>Fondamentaux du game design</li>
+        </ul>
+    </div>
+</section>
+<section class="accordeon">
+    <div class="titre">
+        <p>com</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Fondamentaux du marketing</li>
+            <li>Fondamentaux de la communication</li>
+            <li>Fondamentaux du web marketing</li>
+        </ul>
+    </div>
+</section>
+<section class="accordeon">
+    <div class="titre">
+        <p>3d</p>
+        <img src="img/fleche.png" alt="Chevron">
+    </div>
+    <div class="contenu">
+        <ul>
+            <li>Modélisation de personnage</li>
+            <li>Préparation d’un personnage à l’animation</li>
+            <li>Réalisation d’un court métrage d’animation</li>
+        </ul>
+    </div>
+</section>
+</body>
+
+</html>
